@@ -1,0 +1,29 @@
+{
+    "video_path": "./videos/Bag Thief Caught on Camera at A Coffee Shop.mp4",
+    "model_path": "yolo11n-pose.pt",
+    "output_dir": "./results",
+
+    "yolo": {
+        "conf": 0.06,
+        "iou": 0.5,
+        "imgsz": 640
+    },
+
+    "posture": {
+        "classifier_type": "normal",
+
+        "keypoint_conf": 0.20,
+
+        "hip_standing_threshold": 145,
+        "knee_standing_threshold": 145,
+
+        "text_scale": 0.6,
+        "text_thickness": 2
+    },
+
+    "visualization": {
+        "show_bbox": true,
+        "show_pose": true,
+        "show_posture": true
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "video_path": "./videos/Surya Security Cctv Hik 2MP ⧸ 1080p  cafe TP Surabaya 20170623.mp4",
+    "model_path": "yolo11n-pose.pt",
+    "output_dir": "./results",
+
+    "yolo": {
+        "conf": 0.03,
+        "iou": 0.5,
+        "imgsz": 960
+    },
+
+    "posture": {
+        "classifier_type": "top_down",
+
+        "keypoint_conf": 0.12,
+
+        "top_down_reliable_leg_conf": 0.35,
+
+        "top_down_torso_shoulder_sitting": 1.65,
+        "top_down_torso_shoulder_standing": 2.00,
+        "top_down_ambiguous_torso_ratio": 1.80,
+
+        "top_down_torso_bbox_sitting": 0.32,
+        "top_down_torso_bbox_standing": 0.42,
+
+        "top_down_arm_hip_sitting_threshold": 0.23,
+        "top_down_arm_sitting_max_angle": 140,
+
+        "top_down_hip_sitting_threshold": 120,
+
+        "top_down_knee_standing_threshold": 150,
+
+        "top_down_min_sitting_score": 2.5,
+        "top_down_min_standing_score": 2.5,
+
+        "text_scale": 0.45,
+        "text_thickness": 1
+    },
+
+    "visualization": {
+        "show_bbox": true,
+        "show_pose": true,
+        "show_posture": true
+    }
+}
